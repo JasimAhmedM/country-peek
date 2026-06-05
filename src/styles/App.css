@@ -158,6 +158,31 @@
   margin: 0.35rem 0;
 }
 
+.fav-btn {
+  margin-top: 1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  padding: 0.55rem 0.85rem;
+  border: 1px solid var(--button-border);
+  border-radius: 999px;
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.fav-btn:hover {
+  transform: translateY(-1px);
+}
+
+.fav-btn--saved {
+  border-color: #f87171;
+  color: #f87171;
+}
+
 .card__body p span {
   font-weight: 600;
   color: var(--text);
