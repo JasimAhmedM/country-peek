@@ -1,16 +1,42 @@
-# React + Vite
+# CountryPeek
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+CountryPeek is a React application for searching and exploring countries using the RestCountries API. It includes live search, region filtering, sorting, a dark/light theme, country detail pages, and a persistent favourites list.
 
-Currently, two official plugins are available:
+## Live Demo
+https://jasimahmedm.github.io/country-peek
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
+- Search countries by name with live results and debounce
+- Filter by region and sort by name or population
+- View a full country profile with flag, languages, currencies, and borders
+- Toggle between light and dark themes across the entire app
+- Save favourite countries to a persistent list backed by localStorage
+- Responsive layout and keyboard-friendly interactions
 
-## React Compiler
+## Tech Stack
+- React
+- Vite
+- React Router v7
+- CSS custom properties
+- useReducer + localStorage persistence
+- GitHub Pages deployment
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Run Locally
+1. Install dependencies
+```bash
+npm install
+```
+2. Start the dev server
+```bash
+npm run dev
+```
+3. Open the local URL shown in the terminal
 
-## Expanding the ESLint configuration
+## Deploy
+Build and deploy to GitHub Pages:
+```bash
+npm run deploy
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Notes
+This app uses hash-based routing to support client-side navigation on GitHub Pages.
