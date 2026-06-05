@@ -88,6 +88,13 @@ function Home() {
         </div>
       )}
 
+      {!loading && !error && countries.length > 0 && displayed.length === 0 && (
+        <p className="home__status">
+          No countries found for this region. Try another region or clear the
+          filter.
+        </p>
+      )}
+
       {!loading && !error && countries.length === 0 && !query && (
         <p className="home__status">Start searching to explore countries.</p>
       )}

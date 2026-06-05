@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Page not found</title>
+    <script>
+      const base = '/country-peek'
+      const path = window.location.pathname.replace(base, '') + window.location.search + window.location.hash
+      window.location.replace(base + '/#' + path)
+    </script>
+  </head>
+  <body>
+    <p>Page not found. Redirecting to CountryPeek...</p>
+    <p><a href="/country-peek/">Go back to CountryPeek</a></p>
+  </body>
+</html>
